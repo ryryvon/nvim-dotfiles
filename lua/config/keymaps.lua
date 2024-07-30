@@ -1,10 +1,11 @@
 vim.keymap.set('n', '<leader>hs', '<C-w>s')
 vim.keymap.set('n', '<leader>vs', '<C-w>v')
 vim.keymap.set('n', '<leader>w', '<C-w>w')
-vim.keymap.set('n', '<S-Up>', '5<C-y>')
-vim.keymap.set('n', '<S-Down>', '5<C-e>')
+vim.keymap.set('', '<S-Up>', '5<C-y>')
+vim.keymap.set('', '<S-Down>', '5<C-e>')
 vim.keymap.set('', '<A-Up>', '2<C-y>')
 vim.keymap.set('', '<A-Down>', '2<C-e>')
+vim.keymap.set('n', '<leader>/', ':noh<CR>')
 
 -- ! Telescope keymaps
 -- vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
