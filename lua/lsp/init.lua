@@ -28,34 +28,7 @@ vim.keymap.set('n', '<leader><F8>', dap.step_into, { desc = 'Debug: Step into' }
 vim.keymap.set('n', '<leader><F9>', dap.step_out, { desc = 'Debug: Step out' })
 vim.keymap.set('n', '<leader><F6>', function () dap.terminate() end, { desc = 'Debug: Terminate' })
 
--- Godot Debugger
-dap.adapters.godot = {
-    type = 'server',
-    host = '127.0.0.1',
-    port = 6008,
-}
-
--- Godot C# Configuration
-dap.configurations.cs = {
-    -- {
-    --     name = "Play in Editor",
-    --     type = "godot",
-    --     mode = "playInEditor",
-    --     request = "launch"
-    -- },
-    {
-        name = 'Launch scene',
-        type = 'godot',
-        request = 'launch',
-        mode = 'executable',
-        preLaunchTask = 'build',
-        executable = [[C:\\Program Files\\Godot\\Godot_v3.5.3-stable_mono_win64\Godot_v3.5.3-stable_mono_win64.exe]],
-        executableArguments = {
-            '--path',
-            [[C:\Users\61431\Godot\Snek\project.godot]],
-        }
-    }
-}
+-- DAP config goes here
 
 require("lsp.cmp")
 
